@@ -4,9 +4,9 @@ TMux Cheat Sheet
 // list
 tmux ls \
 // attach to the first one
-tmux attach
+tmux attach \
 // attach to window #1
-tmux attach-session -t 1
+tmux attach-session -t 1 \
 // kill current window
 C-b &
 Hierarchy:
