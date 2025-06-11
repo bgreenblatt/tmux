@@ -37,47 +37,47 @@ set -g mouse off
 * capture screen
 C-b, :  
 * copies 3000 lines into a buffer
-capture-pane -S -3000
+capture-pane -S -3000  
 * save to file
-C-b, :
-save-buffer filename.txt
->>>>>>>>>>>> multiplexing
-// create a horizontal split bar
-C-b followed by "
-// create a vertical split bar
-C-b followed by %
-// updated tmux.conf
-# override split 
-unbind %    # split-window -h
-unbind '"'  # split-window
-bind | split-window -h -c "#{pane_current_path}"
-bind _ split-window -v -c "#{pane_current_path}"
-// sync control
-setw synchronize-panes on
-setw synchronize-panes off
-// or toggle
-setw synchronize-panes
-// resize split panes
+C-b, :  
+save-buffer filename.txt  
+## >>>>>>>>>>>> multiplexing  
+* create a horizontal split bar
+C-b followed by " 
+* create a vertical split bar
+C-b followed by %  
+* updated tmux.conf
+## override split 
+unbind %    # split-window -h  
+unbind '"'  # split-window  
+bind | split-window -h -c "#{pane_current_path}"  
+bind _ split-window -v -c "#{pane_current_path}"  
+* sync control
+setw synchronize-panes on  
+setw synchronize-panes off  
+* or toggle
+setw synchronize-panes  
+* resize split panes
 C-b Esc Arrow
-// auto resize
-C-b z: zoom current 
-C-b <Space>: Cycle through
-C-b Alt+1: Even horizontal splits
-C-b Alt+2: Even vertical splits
-C-b Alt+3: Horizontal span for the main pane, vertical splits for lesser panes
-C-b Alt+3: Vertical span for the main pane, horizontal splits for lesser panes
-C-b Alt+1: Side-by-side
-C-b Alt+5: Tiled layout
-// moving panes
-C-b {          move the current pane to the previous position
-C-b }          move the current pane to the next position
-C-b C-o        rotate window ‘up’ (i.e. move all panes)
-C-b M-o        rotate window ‘down’
-C-b !          move the current pane into a new separate
-               window (‘break pane’)
-// navigate
-C-b O (order)
-C-b arrow
-// reload config
-C-b :
-source-file ~/.tmux.conf
+* auto resize
+C-b z: zoom current  
+C-b <Space>: Cycle through  
+C-b Alt+1: Even horizontal splits  
+C-b Alt+2: Even vertical splits  
+C-b Alt+3: Horizontal span for the main pane, vertical splits for lesser panes  
+C-b Alt+3: Vertical span for the main pane, horizontal splits for lesser panes  
+C-b Alt+1: Side-by-side  
+C-b Alt+5: Tiled layout  
+* moving panes
+C-b {          move the current pane to the previous position  
+C-b }          move the current pane to the next position  
+C-b C-o        rotate window ‘up’ (i.e. move all panes)  
+C-b M-o        rotate window ‘down’  
+C-b !          move the current pane into a new separate  
+               window (‘break pane’)  
+* navigate
+C-b O (order)  
+C-b arrow  
+* reload config
+C-b :  
+source-file ~/.tmux.conf  
