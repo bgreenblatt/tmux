@@ -30,15 +30,15 @@ C-b &
     D: exit to parent  
     new: new session  
 * copy/paste using ctrl-c/v ctrl-shift-c/v
-// select by hold shift and mouse; shift-right-click to use menu, or
-copy/paste as usual
-// turning off tmux mouse support enables system behavior; use in tmux command or in ~/.tmux.conf
-set -g mouse off
-// capture screen
-C-b, :
-// copies 3000 lines into a buffer
+select by hold shift and mouse; shift-right-click to use menu, or  
+copy/paste as usual  
+* turning off tmux mouse support enables system behavior; use in tmux command or in ~/.tmux.conf
+set -g mouse off  
+* capture screen
+C-b, :  
+* copies 3000 lines into a buffer
 capture-pane -S -3000
-// save to file
+* save to file
 C-b, :
 save-buffer filename.txt
 >>>>>>>>>>>> multiplexing
