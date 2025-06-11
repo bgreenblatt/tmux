@@ -43,9 +43,9 @@ C-b, :
 save-buffer filename.txt  
 ## >>>>>>>>>>>> multiplexing  
 * create a horizontal split bar
-C-b followed by " 
+C-b followed by |  
 * create a vertical split bar
-C-b followed by %  
+C-b followed by _  
 * updated tmux.conf
 ## override split 
 unbind %    # split-window -h  
