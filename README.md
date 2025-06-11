@@ -1,9 +1,9 @@
 # tmux
 TMux Cheat Sheet
 
-// list
+// list  
 tmux ls \
-// attach to the first one
+// attach to the first one  
 tmux attach \
 // attach to window #1
 tmux attach-session -t 1 \
