@@ -2,7 +2,7 @@
 TMux Cheat Sheet
 
 // list
-tmux ls
+tmux ls \
 // attach to the first one
 tmux attach
 // attach to window #1
